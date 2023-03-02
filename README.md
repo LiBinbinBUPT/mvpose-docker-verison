@@ -49,5 +49,11 @@ bash compile.sh
 cd mvpose/backend/light_head_rcnn/lib/
 bash make.sh
 ```
+* Compile the pictorial function for acceleration
+```linux
+cd mvpose/src/m_lib/
+python setup.py build_ext --inplace
+```
+## Prepare the model and datasets
 
 
