@@ -13,7 +13,24 @@ git clone https://github.com/zju3dv/mvpose.git
 ```linux
 git clone https://github.com/LiBinbinBUPT/mvpose-docker-verison.git
 ```
-* Copy the Dockerfile apt to mvpose
+* Copy the Dockerfile and apt-sources.list to mvpose
 ```linux
 sudo cp /mvpose-docker-version/* /mvpose
 ```
+* Come to the mvpose directory and build the images for mvpose
+```linux
+cd mvpose
+docker build -f Dockerfile -t mvpose .
+```
+* Build the docker based on the images using 11g GPU memory and go in docker
+```linux
+docker  run -it --gpus=all --name mvpose --shm-size 11g -v path/to/mvpose:/mvpose mvpose /bin/bash
+docker exec -it mvpose /bin/bash
+```
+* Install python3.6 for your docker and install pip and some libs
+```linux
+apt-get install -y python3-pip && python3.6 -m pip install --upgrade pip
+apt-get update && apt-get install -y libsm6 libxext6 libxrender-dev
+```
+* Install tcl8.6.8 and tk8.6.8 from[tcltk](http://www.tcl.tk/software/tcltk/download.html)
+
