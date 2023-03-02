@@ -9,3 +9,7 @@ The docker is make to complish the paper: Fast and Robust Multi-Person 3D Pose E
 ```linux
 git clone https://github.com/zju3dv/mvpose.git 
 ```
+* Download the file in the currrent github
+```linux
+git clone 
+```
