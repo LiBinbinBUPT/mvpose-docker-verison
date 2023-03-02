@@ -11,5 +11,9 @@ git clone https://github.com/zju3dv/mvpose.git
 ```
 * Download the file in the currrent github
 ```linux
-git clone 
+git clone https://github.com/LiBinbinBUPT/mvpose-docker-verison.git
+```
+* Copy the Dockerfile apt to mvpose
+```linux
+sudo cp /mvpose-docker-version/* /mvpose
 ```
