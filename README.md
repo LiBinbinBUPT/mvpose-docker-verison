@@ -27,7 +27,7 @@ docker build -f Dockerfile -t mvpose .
 docker  run -it --gpus=all --name mvpose --shm-size 11g -v path/to/mvpose:/mvpose mvpose /bin/bash
 docker exec -it mvpose /bin/bash
 ```
-* Install python3.6.3 for your docker and install pip and some libs
+* Install [python3.6.3](https://www.python.org/downloads/release/python-363/) for your docker and install pip and some libs
 ```linux
 apt-get install -y python3-pip && python3.6 -m pip install --upgrade pip
 apt-get update && apt-get install -y libsm6 libxext6 libxrender-dev
