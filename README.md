@@ -4,3 +4,8 @@
 * Junting Dong, Wen Jiang, Qixing Huang, Hujun Bao, Xiaowei Zhou CVPR 2019  
 The docker is make to complish the paper: Fast and Robust Multi-Person 3D Pose Estimation and Tracking From Multiple Views  
 
+## Installation
+* Download the git code form the author's github
+```linux
+git clone https://github.com/zju3dv/mvpose.git 
+```
