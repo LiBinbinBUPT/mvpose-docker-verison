@@ -33,5 +33,21 @@ apt-get install -y python3-pip && python3.6 -m pip install --upgrade pip
 apt-get update && apt-get install -y libsm6 libxext6 libxrender-dev
 ```
 * Download tcl8.6.8 and tk8.6.8 from [tcl, tk](http://www.tcl.tk/software/tcltk/download.html) and configure
-* 
+* Install the requirements
+```python
+python3.6 -m pip install ipython sklearn Pillow==6.1
+python3 -m pip install -r requirements.txt 
+```
+* Compile the `backend/tf_cpn/lib` and `backend/light_head_rcnn/lib`
+```linux
+cd mvpose/backend/tf_cpn/lib/
+make
+cd ./lib_kernel/lib_nms
+bash compile.sh
+```
+```linux
+cd mvpose/backend/light_head_rcnn/lib/
+bash make.sh
+```
+
 
